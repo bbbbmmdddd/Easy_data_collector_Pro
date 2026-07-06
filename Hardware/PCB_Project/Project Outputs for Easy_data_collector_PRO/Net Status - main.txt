@@ -1,0 +1,78 @@
+Net Status Report
+Filename     : F:\Project_Hw_Sw_doc\Easy_data_collector_Pro\Hardware\PCB_Project\main.PcbDoc
+Date         : 2026-07-06
+Time         : 18:43:00
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    3V3, Signal Layers Only, 0mm
+    5V, Signal Layers Only, 0mm
+    GND, Signal Layers Only, 0mm
+    NetBAT1_1, Signal Layers Only, 0mm
+    NetC15_2, Signal Layers Only, 0mm
+    NetC1_1, Signal Layers Only, 0mm
+    NetC2_2, Signal Layers Only, 0mm
+    NetC3_2, Signal Layers Only, 0mm
+    NetC4_2, Signal Layers Only, 0mm
+    NetC5_1, Signal Layers Only, 0mm
+    NetD1_3, Signal Layers Only, 0mm
+    NetD2_1, Signal Layers Only, 0mm
+    NetQ1_1, Signal Layers Only, 0mm
+    NetQ1_3, Signal Layers Only, 0mm
+    NetR13_1, Signal Layers Only, 0mm
+    NetR1_1, Signal Layers Only, 0mm
+    NetR3_2, Signal Layers Only, 0mm
+    NetR4_2, Signal Layers Only, 0mm
+    NetR5_1, Signal Layers Only, 0mm
+    NetR6_2, Signal Layers Only, 0mm
+    NetR7_1, Signal Layers Only, 0mm
+    NetR8_2, Signal Layers Only, 0mm
+    NetU1_46, Signal Layers Only, 0mm
+    NetU1_49, Signal Layers Only, 0mm
+    PA0, Signal Layers Only, 0mm
+    PA1, Signal Layers Only, 0mm
+    PA10, Signal Layers Only, 0mm
+    PA11, Signal Layers Only, 0mm
+    PA12, Signal Layers Only, 0mm
+    PA15, Signal Layers Only, 0mm
+    PA2, Signal Layers Only, 0mm
+    PA3, Signal Layers Only, 0mm
+    PA4, Signal Layers Only, 0mm
+    PA5, Signal Layers Only, 0mm
+    PA6, Signal Layers Only, 0mm
+    PA7, Signal Layers Only, 0mm
+    PA8, Signal Layers Only, 0mm
+    PA9, Signal Layers Only, 0mm
+    PB0, Signal Layers Only, 0mm
+    PB1, Signal Layers Only, 0mm
+    PB10, Signal Layers Only, 0mm
+    PB11, Signal Layers Only, 0mm
+    PB12, Signal Layers Only, 0mm
+    PB13, Signal Layers Only, 0mm
+    PB14, Signal Layers Only, 0mm
+    PB15, Signal Layers Only, 0mm
+    PB2, Signal Layers Only, 0mm
+    PB3, Signal Layers Only, 0mm
+    PB4, Signal Layers Only, 0mm
+    PB5, Signal Layers Only, 0mm
+    PB6, Signal Layers Only, 0mm
+    PB7, Signal Layers Only, 0mm
+    PB8, Signal Layers Only, 0mm
+    PB9, Signal Layers Only, 0mm
+    PC0, Signal Layers Only, 0mm
+    PC1, Signal Layers Only, 0mm
+    PC13, Signal Layers Only, 0mm
+    PC2, Signal Layers Only, 0mm
+    PC3, Signal Layers Only, 0mm
+    PC4, Signal Layers Only, 0mm
+    PC5, Signal Layers Only, 0mm
+    PC6, Signal Layers Only, 0mm
+    PC7, Signal Layers Only, 0mm
+    SDIO_CLK, Signal Layers Only, 23.0296mm
+    SDIO_CMD, Signal Layers Only, 3.6219mm
+    SDIO_D0, Signal Layers Only, 13.3368mm
+    SDIO_D1, Signal Layers Only, 17.3051mm
+    SDIO_D2, Signal Layers Only, 27.1645mm
+    SDIO_D3, Signal Layers Only, 22.9827mm
+    SD_SW, Signal Layers Only, 0mm
+count : 70
