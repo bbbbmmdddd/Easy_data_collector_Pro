@@ -6,7 +6,8 @@ Easy_data_collector采集卡的升级版
 - TF 卡存储 高可靠卡槽
 - 上位机&测试数据计算
 - 充电宝供电 | 8V~20V输入
-<b><font color=#FF0000>NEW</font>:</b>
+
+__NEW:__
 - 点火头状态检测
 - 安全稳定点火
 - 内置电池
