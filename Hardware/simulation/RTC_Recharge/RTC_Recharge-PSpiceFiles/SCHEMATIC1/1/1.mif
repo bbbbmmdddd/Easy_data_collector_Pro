@@ -1,0 +1,3 @@
+ lib=C:\cds_spb_home\cdssetup\pspTILibDir\tlv61070.lib, offset=49711, size=90
+ lib=C:\cds_spb_home\cdssetup\pspTILibDir\LMV331.LIB, offset=1269, size=1431
+ lib=f:\software_tool\pspice_for_ti\tools\PSpice\Library\breakout.lib, offset=780, size=131

@@ -1,0 +1,241 @@
+
+**** 07/02/26 15:24:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\RTC_Recharge-PSpiceFiles\SCHEMATI
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 3000ms 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source RTC_RECHARGE
+R_R1         N13406 N13548  20.09k TC=0,0 
+R_R2         N13416 N13406  100k TC=0,0 
+V_V3         N13726 0 DC 0 AC 0
++PULSE 0 3.3 420m 10u 10u 300m 600m
+C_C2         N13548 0  1000u IC=0 
+V_V1         N13286 0 3.3Vdc
+M_M1         N13620 N13416 N13454 N13454 MbreakP           
+R_R5         N13454 N13548  100 TC=0,0 
+M_M3         N13658 N13726 0 0 power_Mbreakn           
+R_R3         N13286 N13416  100k TC=0,0 
+R_R7         N13658 N13548  1k TC=0,0 
+R_R4         N13354 N13286  28.25k TC=0,0 
+X_U1         N13406 N13354 N13286 0 N13416 LMV331
+V_V2         N13620 0 3.1Vdc
+R_R6         0 N13354  100k TC=0,0 
+
+**** RESUMING 1.cir ****
+.END
+
+**** 07/02/26 15:24:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\RTC_Recharge-PSpiceFiles\SCHEMATI
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.md0        X_U1.md1        X_U1.mdb1       X_U1.mds        
+          IS  100.000000E-12    1.000000E-12   10.000000E-15  100.000000E-18 
+          RS     .01                                                         
+         CJO                                  200.000000E-15                 
+
+
+**** 07/02/26 15:24:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\RTC_Recharge-PSpiceFiles\SCHEMATI
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.mq1        X_U1.mq2        X_U1.mqo        
+               PNP             PNP             NPN             
+       LEVEL    1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF    9.614380E+03   10.415700E+03  100            
+          NF    1               1               1            
+          BR    1               1              10            
+          NR    1               1                .95         
+         ISC                                    2.700000E-09 
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0              13.6145       
+         CJE    0               0              10.000000E-15 
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0              50.000000E-15 
+         VJS     .75             .75             .75         
+         XTB    2.27169         2.27169                      
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.2             2.2             2.42         
+           D     .52             .52             .87         
+
+
+**** 07/02/26 15:24:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\RTC_Recharge-PSpiceFiles\SCHEMATI
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         power_Mbreakn   
+               PMOS            NMOS            
+       LEVEL    1               3            
+           L   10.000000E-09    1.000000E-06 
+           W  450.000000E-09    1            
+         VTO    -.7             3            
+          KP   10              20.718860E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .12            0            
+          RD                     .1          
+          RS                     .01         
+          RG                     .5          
+         RDS                    1.000000E+06 
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD                    1.000000E-09 
+          CJ    0               0            
+        CJSW    0               0            
+          TT                    1.000000E-09 
+        CGSO    0               1.000000E-09 
+        CGDO    0             100.000000E-12 
+        CGBO    0               0            
+         TOX    0             100.000000E-09 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 07/02/26 15:24:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\RTC_Recharge-PSpiceFiles\SCHEMATI
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N13286)    3.3000 (N13354)    2.5731 (N13406)     .0267 (N13416)     .1539     
+
+(N13454)    3.1000 (N13548) 62.00E-06 (N13620)    3.1000 (N13658) 61.94E-06     
+
+(N13726)    0.0000 (X_U1.6)     .7829 (X_U1.7)     .8829 (X_U1.10)     .8829    
+
+(X_U1.11)     .1517                   (X_U1.12) 1.047E-09                       
+
+(X_U1.13)    2.5668                   (X_U1.16)    -.6551                       
+
+(X_U1.17)    0.0000                   (X_U1.18)    0.0000                       
+
+(X_U1.20)  -21.0320                   (X_U1.21)  -20.1320                       
+
+(X_U1.22)-1.239E-09                   (X_U1.25)   -9.9838                       
+
+(X_U1.26)    9.4000                   (X_U1.27)   -9.4000                       
+
+(X_U1.30)  -21.0320                   (X_U1.33)-446.7E-06                       
+
+(X_U1.35) -108.7800                   (X_U1.40)     .4779                       
+
+(X_U1.41)    1.1063                   (X_U1.42)     .1000                       
+
+(X_U1.45)     .6284                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         0.000E+00
+    V_V1        -1.141E-04
+    V_V2        -3.100E-02
+    X_U1.vos     2.567E-12
+    X_U1.vcl1   -1.194E-10
+    X_U1.vcl2    5.187E-01
+    X_U1.v1     -1.655E-12
+    X_U1.v2      9.984E-02
+    X_U1.voe     1.040E+00
+
+    TOTAL POWER DISSIPATION  -4.88E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 07/02/26 15:24:37 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-1"  [ F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\RTC_Recharge-PSpiceFiles\SCHEMATI
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.13
+

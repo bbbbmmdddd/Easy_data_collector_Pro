@@ -1,0 +1,54 @@
+(ExpressProject "RTC_Recharge"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1-2024 S001-[07/02/26]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\rtc_recharge.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\rtc_recharge-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\rtc_recharge-pspicefiles\schematic1\1.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\rtc_recharge-pspicefiles\schematic1\1.sim"
+        (DisplayName "SCHEMATIC1-1")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\rtc_recharge.dsn")
+      (Path "Design Resources"
+         "F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\rtc_recharge.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         "F:\Project_Hw_Sw_doc\Easy_data_collector_PRO\simulation\RTC_Recharge\rtc_recharge-pspicefiles\schematic1\1.sim"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 295 0 1067"))
+      (Tab 0))))
