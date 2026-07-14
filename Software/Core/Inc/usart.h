@@ -56,7 +56,7 @@ extern UART_RxTypeDef Uart1Rx;
 
 #ifdef __cplusplus
 }
-
 #endif
 
 #endif /* __USART_H__ */
+

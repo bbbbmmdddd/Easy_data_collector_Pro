@@ -29,7 +29,9 @@ DMA_HandleTypeDef hdma_sdio;
 
 /* SDIO init function */
 
-void MX_SDIO_SD_Init(void) {
+void MX_SDIO_SD_Init(void)
+{
+
   /* USER CODE BEGIN SDIO_Init 0 */
 
   /* USER CODE END SDIO_Init 0 */
@@ -49,14 +51,18 @@ void MX_SDIO_SD_Init(void) {
   hsd.Init.BusWide = SDIO_BUS_WIDE_1B;  // 修BUG
 
   /* USER CODE END SDIO_Init 2 */
+
 }
 
-void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle) {
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if (sdHandle->Instance == SDIO) {
-    /* USER CODE BEGIN SDIO_MspInit 0 */
+void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle)
+{
 
-    /* USER CODE END SDIO_MspInit 0 */
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  if(sdHandle->Instance==SDIO)
+  {
+  /* USER CODE BEGIN SDIO_MspInit 0 */
+
+  /* USER CODE END SDIO_MspInit 0 */
     /* SDIO clock enable */
     __HAL_RCC_SDIO_CLK_ENABLE();
 
@@ -70,8 +76,8 @@ void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle) {
     PC12     ------> SDIO_CK
     PD2     ------> SDIO_CMD
     */
-    GPIO_InitStruct.Pin =
-        GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12;
+    GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11
+                          |GPIO_PIN_12;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -91,29 +97,32 @@ void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle) {
     hdma_sdio.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_sdio.Init.Mode = DMA_NORMAL;
     hdma_sdio.Init.Priority = DMA_PRIORITY_LOW;
-    if (HAL_DMA_Init(&hdma_sdio) != HAL_OK) {
+    if (HAL_DMA_Init(&hdma_sdio) != HAL_OK)
+    {
       Error_Handler();
     }
 
     /* Several peripheral DMA handle pointers point to the same DMA handle.
-     Be aware that there is only one channel to perform all the requested DMAs.
-   */
+     Be aware that there is only one channel to perform all the requested DMAs. */
     /* Be sure to change transfer direction before calling
      HAL_SD_ReadBlocks_DMA or HAL_SD_WriteBlocks_DMA. */
-    __HAL_LINKDMA(sdHandle, hdmarx, hdma_sdio);
-    __HAL_LINKDMA(sdHandle, hdmatx, hdma_sdio);
+    __HAL_LINKDMA(sdHandle,hdmarx,hdma_sdio);
+    __HAL_LINKDMA(sdHandle,hdmatx,hdma_sdio);
 
-    /* USER CODE BEGIN SDIO_MspInit 1 */
+  /* USER CODE BEGIN SDIO_MspInit 1 */
 
-    /* USER CODE END SDIO_MspInit 1 */
+  /* USER CODE END SDIO_MspInit 1 */
   }
 }
 
-void HAL_SD_MspDeInit(SD_HandleTypeDef* sdHandle) {
-  if (sdHandle->Instance == SDIO) {
-    /* USER CODE BEGIN SDIO_MspDeInit 0 */
+void HAL_SD_MspDeInit(SD_HandleTypeDef* sdHandle)
+{
 
-    /* USER CODE END SDIO_MspDeInit 0 */
+  if(sdHandle->Instance==SDIO)
+  {
+  /* USER CODE BEGIN SDIO_MspDeInit 0 */
+
+  /* USER CODE END SDIO_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_SDIO_CLK_DISABLE();
 
@@ -125,17 +134,17 @@ void HAL_SD_MspDeInit(SD_HandleTypeDef* sdHandle) {
     PC12     ------> SDIO_CK
     PD2     ------> SDIO_CMD
     */
-    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 |
-                               GPIO_PIN_12);
+    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11
+                          |GPIO_PIN_12);
 
     HAL_GPIO_DeInit(GPIOD, GPIO_PIN_2);
 
     /* SDIO DMA DeInit */
     HAL_DMA_DeInit(sdHandle->hdmarx);
     HAL_DMA_DeInit(sdHandle->hdmatx);
-    /* USER CODE BEGIN SDIO_MspDeInit 1 */
+  /* USER CODE BEGIN SDIO_MspDeInit 1 */
 
-    /* USER CODE END SDIO_MspDeInit 1 */
+  /* USER CODE END SDIO_MspDeInit 1 */
   }
 }
 
