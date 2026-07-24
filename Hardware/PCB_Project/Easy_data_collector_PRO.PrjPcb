@@ -67,6 +67,23 @@ GenerateClassCluster=0
 DocumentUniqueId=UCDSWNST
 
 [Document2]
+DocumentPath=power.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JNBYQVYR
+
+[Document3]
 DocumentPath=main.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TCUSSEKR
 
-[Document3]
+[Document4]
 DocumentPath=D:\AD_library\bmd_my_library\STM32.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DJCWAAPI
 
-[Document4]
+[Document5]
 DocumentPath=D:\AD_library\bmd_my_library\STM32.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
